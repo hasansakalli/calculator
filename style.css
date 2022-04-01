@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h2 {
+  font-size: 3em;
+  text-align: center;
+  color: white;
+  margin-bottom: 1em;
+  border: 1px solid grey;
+  padding: 0.2em 0.6em;
+}
+
+.input-box {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.container {
+  border: 5px solid gray;
+  padding: 3em 1em 3em 1em;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+}
+.image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://www.swr.de/swr2/wissen/1614253721441,gibt-es-die-perfekte-zahl-102~_v-16x9@2dL_-6c42aff4e68b43c7868c3240d3ebfa29867457da.jpg");
+  position: absolute;
+
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input {
+  width: 5em;
+  height: 2.5em;
+  outline: transparent;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#result {
+  display: grid;
+  align-items: center;
+  width: 9em;
+  height: 3em;
+  margin-top: 1em;
+  border: 1px solid gray;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.482);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+#send {
+  width: 13em;
+  height: 3em;
+  margin-top: 1em;
+  border: 1px solid gray;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: bold;
+}
+#send:hover {
+  background-color: rgb(45, 123, 3);
+  color: white;
+}
+option {
+  color: rgb(141, 20, 16);
+  font-size: 1em;
+  outline: none;
+  text-align: center;
+  background-color: white;
+  border-radius: 25px;
+}
+
+::placeholder {
+  font-size: 17px;
+  text-align: center;
+}
+#select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 2em;
+  font-size: 2em;
+  outline: none;
+}
+input::-ms-expand {
+  display: none;
+}
+
+#zahl1 {
+  outline: none;
+}
+
+#zahl1::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
